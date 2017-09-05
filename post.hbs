@@ -34,8 +34,9 @@ into the {body} of the default.hbs template --}}
 
             <section class="post-full-content">
                 {{content}}
+                <strong>Tags:</strong> {{tags}}
             </section>
-
+            <!--<section class="post-full-content"></section>-->
             {{!-- Email subscribe form at the bottom of the page --}}
             {{#if @labs.subscribers}}
             <section class="subscribe-form">
@@ -44,7 +45,6 @@ into the {body} of the default.hbs template --}}
                 {{subscribe_form placeholder="youremail@example.com"}}
             </section>
             {{/if}}
-
             <footer class="post-full-footer">
                 {{!-- Everything inside the #author tags pulls data from the author --}}
                 {{#author}}
