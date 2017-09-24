@@ -16,6 +16,9 @@
 
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
     {{ghost_head}}
+    {{#is "author"}}
+    <meta name="robots" content="noindex">
+    {{/is}}
 
 </head>
 <body class="{{body_class}}">
